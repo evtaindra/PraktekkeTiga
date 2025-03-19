@@ -6,41 +6,110 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".LoginActivity">
 
-    <EditText
-        android:id="@+id/etLoginUsername"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/logo_unpri" />
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Masukkan Username"
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/etLoginPassword"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:ems="10"
-        android:hint="Masukkan Password"
-        android:inputType="textPassword" />
+        android:text="Universitas Prima Indonesia"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@color/black"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btLoginCancel"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Batal" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btLoginLogin"
-            android:layout_width="wrap_content"
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="65dp"
+                android:src="@drawable/creditcard" />
+
+            <EditText
+                android:id="@+id/etLoginUsername"
+                android:layout_width="0dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="55dp"
+                android:layout_weight="1"
+                android:hint="Masukkan Username"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login" />
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="65dp"
+                android:src="@drawable/roomkey" />
+
+            <EditText
+                android:id="@+id/etLoginPassword"
+                android:layout_width="0dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="55dp"
+                android:layout_weight="1"
+                android:hint="Masukkan Password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btLoginCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#8DBAFD"
+                android:text="Batal"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btLoginLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#8DBAFD"
+                android:text="Login"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="The Best Choice"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textSize="25sp" />
     </LinearLayout>
+
 
 </LinearLayout>
