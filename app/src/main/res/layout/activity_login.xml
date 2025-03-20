@@ -87,7 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="20dp"
-                android:backgroundTint="#8DBAFD"
+                android:backgroundTint="#FFEB3B"
                 android:text="Batal"
                 android:textColor="#000000" />
 
